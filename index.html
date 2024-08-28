@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency Dashboard</title>
+    <title>Travel Agency Home Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="left-column">
-            <img id="image-preview" src="https://fakeimg.pl/600x400?text=Home+Image" alt="Introduction" />
+            <img id="home-image" src="https://fakeimg.pl/800x800?text=Travel+Image" alt="Travel Image" />
         </div>
         <div class="right-column">
-            <button id="preview-button">Preview PDF</button>
+            <h1>Welcome to Our Travel Agency</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <!-- Creative element: a quote slider -->
+            <div class="quote-slider">
+                <div class="quote">"The world is a book, and those who do not travel read only one page." - Saint Augustine</div>
+                <div class="quote">"Travel makes one modest. You see what a tiny place you occupy in the world." - Gustave Flaubert</div>
+                <div class="quote">"To travel is to live." - Hans Christian Andersen</div>
+            </div>
+
+            <button id="create-pdf-button" onclick="window.location.href='create.html'">Create PDF</button>
         </div>
     </div>
 

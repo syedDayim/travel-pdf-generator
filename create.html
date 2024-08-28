@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create PDF</title>
+    <link rel="stylesheet" href="create-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="pdf-pages">
+                <div class="pdf-page" id="page1">
+                    <h2 id="title1">Title 1</h2>
+                    <p id="content1">Page 1 content here...</p>
+                </div>
+                <div class="pdf-page" id="page2">
+                    <h2 id="title2">Title 2</h2>
+                    <p id="content2">Page 2 content here...</p>
+                </div>
+                <div class="pdf-page" id="page3">
+                    <h2 id="title3">Title 3</h2>
+                    <p id="content3">Page 3 content here...</p>
+                </div>
+                <div class="pdf-page" id="page4">
+                    <h2 id="title4">Title 4</h2>
+                    <p id="content4">Page 4 content here...</p>
+                </div>
+                <div class="pdf-page" id="page5">
+                    <h2 id="title5">Title 5</h2>
+                    <p id="content5">Page 5 content here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <form id="inputForm">
+                <label for="titleInput">Title:</label>
+                <input type="text" id="titleInput" placeholder="Enter title" oninput="updatePageContent()">
+
+                <label for="contentInput">Content:</label>
+                <textarea id="contentInput" placeholder="Enter content" oninput="updatePageContent()"></textarea>
+
+                <button type="button" id="download-pdf-button" onclick="downloadPDF()">Download PDF</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <!-- Include custom JavaScript -->
+    <script src="create-script.js"></script>
+</body>
+</html>
